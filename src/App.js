@@ -37,24 +37,6 @@ function App() {
     return list;
   };
 
-  const compare = (a, b) => {
-    console.log(a.props.color + " " + valuePairs[a.props.color]);
-    console.log(a.props.face + " " + valuePairs[a.props.face]);
-    console.log(b.props.color + " " + valuePairs[b.props.color]);
-    console.log(b.props.face + " " + valuePairs[b.props.face]);
-    if (valuePairs[a.props.color] < valuePairs[b.props.color]) {
-      return -1;
-    } else if (valuePairs[a.props.color] > valuePairs[b.props.color]) {
-      return 1;
-    } else if (valuePairs[a.props.face] < valuePairs[b.props.face]) {
-      return -1;
-    } else if (valuePairs[a.props.face] > valuePairs[b.props.face]) {
-      return 1;
-    } else {
-      return 0;
-    }
-  };
-
   const colors = ["club", "diamond", "heart", "spade"];
   const faces = [
     "two",
